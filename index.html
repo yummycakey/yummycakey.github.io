@@ -1,7 +1,14 @@
 <html>
 <body>
+  <h1>Something important:</h1>
+  <div id="important" />
 </body>
 <script>
-  window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  setTimeout(() => {
+  var div = document.createElement("div");
+  div.innerHTML = "FU LOL";
+  document.getElementById("important").appendChild(div);
+  }, 1000);
+  setTimeout(() => window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 2000);
 </script>
 </html>
